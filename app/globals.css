@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
+/* ================= THEME ================= */
+@theme {
+  /* Backgrounds */
+  --bg-main: #070B14;              /* page background */
+  --bg-navbar: #0B0F1A;            /* navbar background */
+
+  /* Text */
+  --text-primary: #FFFFFF;
+  --text-muted: #A1A1AA;
+
+  /* Borders */
+  --border-glow: rgba(99, 102, 241, 0.25); /* bluish glow */
+  --border-soft: rgba(255, 255, 255, 0.08);
+
+  /* Accent */
+  --accent: #22C55E;
+
+  /* Base */
+  --background: #070B14;
+  --foreground: #FFFFFF;
+}
+
+/* ================= BASE ================= */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Inter, Arial, Helvetica, sans-serif;
+}
